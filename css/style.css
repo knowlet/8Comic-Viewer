@@ -1,0 +1,36 @@
+#btPrev,
+#btMenu,
+#btNext {
+	bottom: 48px;
+	background: rgba(255, 177, 27, 0.9);
+}
+nav {
+	height: 100%;
+	position: fixed;
+	right: 20px;
+	top: 0;
+	width: 36px;
+}
+nav li {
+	-webkit-box-shadow: rgba(255, 255, 255, 0.498039) 1px 1px 2px 1px;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	border-radius: 8px;
+	display: block;
+	height: 32px;
+	margin: 16px 0px 16px 4px;
+	position: absolute;
+	width: 32px;
+}
+nav li:hover {
+	margin: 16px 0;
+	width: 36px;
+}
+nav li img {
+	display: block;
+	margin: 0 auto;
+	opacity: .5;
+	position: relative;
+	top: 8px;
+	width: 16px;
+}
