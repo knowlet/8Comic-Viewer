@@ -4,10 +4,14 @@
 	bottom: 48px;
 	background: rgba(255, 177, 27, 0.9);
 }
+nav ul {
+	cursor: move;
+	padding-left: 0;
+}
 nav {
 	height: 100%;
 	position: fixed;
-	right: 10%;
+	right: 5%;
 	top: 75%;
 	width: 36px;
 }
@@ -20,6 +24,7 @@ nav li {
 	height: 30px;
 	margin: 16px 0px 16px 4px;
 	width: 32px;
+	cursor: default;
 }
 nav li:hover {
 	margin: 16px 0;
