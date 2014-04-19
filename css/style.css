@@ -7,7 +7,7 @@
 nav {
 	height: 100%;
 	position: fixed;
-	right: 20px;
+	right: 5%;
 	top: 0;
 	width: 36px;
 }
@@ -19,7 +19,6 @@ nav li {
 	display: block;
 	height: 32px;
 	margin: 16px 0px 16px 4px;
-	position: absolute;
 	width: 32px;
 }
 nav li:hover {

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            8Comic Viewer
-// @version         1.2
+// @version         1.2d
 // @author          knowlet
 // @namespace       http://knowlet3389.blogspot.tw/
 // @description     Auto load 8comic pic.
@@ -30,7 +30,7 @@ exec(function() {
 		var style = document.createElement("link");
 		style.setAttribute("rel", "stylesheet")
 		style.setAttribute("type", "text/css")
-		style.setAttribute("href", "https://rawgit.com/knowlet/8Comic-Viewer/css/style.css")
+		style.setAttribute("href", "https://rawgit.com/knowlet/8Comic-Viewer/dev/css/style.css")
 		document.head.appendChild(style);
 	}
 	document.getElementById("TheImg").remove();
