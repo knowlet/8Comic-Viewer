@@ -17,12 +17,22 @@ function exec(fn) {
 exec(function() {
     var cc = cs.length;
     var content = document.getElementById("TheImg").parentNode;
+    var cleanTable = function() {
+        var x = document.getElementsByTagName("table");
+        x[0].remove();
+        x[0].remove();
+        x[0].remove();
+        x[1].remove();
+        x[2].remove();
+        x[3].remove();
+    }
     document.getElementById("TheImg").remove();
     for (var i = 1; i <= ps; ++i) {
         content.appendChild(document.createElement("img"));
-        content.getElementsByTagName("img")[i-1].src = 'http://img' + ss(c, 4, 2) + '.8comic.com/' + ss(c, 6, 1) + '/' + ti + '/' + ss(c, 0, 4) + '/' + nn(i) + '_' + ss(c, mm(i) + 10, 3, f) + '.jpg';
+        content.getElementsByTagName("img")[i - 1].src = 'http://img' + ss(c, 4, 2) + '.8comic.com/' + ss(c, 6, 1) + '/' + ti + '/' + ss(c, 0, 4) + '/' + nn(i) + '_' + ss(c, mm(i) + 10, 3, f) + '.jpg';
         content.appendChild(document.createElement("br"));
     }
+    cleanTable();
     prev2.innerText = "[ 上一話 ]";
     prev2.onclick = function onclick(event) {
         ch <= 1 && alert("前面沒有東西喔！");
