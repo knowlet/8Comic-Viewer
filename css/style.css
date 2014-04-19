@@ -7,8 +7,8 @@
 nav {
 	height: 100%;
 	position: fixed;
-	right: 5%;
-	top: 0;
+	right: 10%;
+	top: 75%;
 	width: 36px;
 }
 nav li {
@@ -17,7 +17,7 @@ nav li {
 	transition: all 0.3s ease-in-out;
 	border-radius: 8px;
 	display: block;
-	height: 32px;
+	height: 30px;
 	margin: 16px 0px 16px 4px;
 	width: 32px;
 }
