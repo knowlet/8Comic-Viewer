@@ -12,13 +12,13 @@
     b.textContent = "(" + function() {
         var a = document.getElementById("TheImg").parentNode, b = false;
         document.getElementById("TheImg").remove();
-        // Memory vol.
+        // Memory Vol.
         localStorage.last > ch && confirm("你上次已經看到第" + localStorage.last + "話（卷）囉！\n是否要前往呢？") && jv(localStorage.last);
         localStorage.setItem("last", ch);
-        // Load pic
+        // Load Pic
         for (var d = 1; d <= ps; ++d)
             a.appendChild(document.createElement("img")), a.getElementsByTagName("img")[d - 1].setAttribute("src", "http://img" + ss(c, 4, 2) + ".8comic.com/" + ss(c, 6, 1) + "/" + ti + "/" + ss(c, 0, 4) + "/" + nn(d) + "_" + ss(c, mm(d) + 10, 3, f) + ".jpg"), a.appendChild(document.createElement("br"));
-        // Clean table
+        // Clean Table
         a = document.getElementsByTagName("table");
         a[0].remove();
         a[0].remove();
@@ -26,15 +26,15 @@
         a[1].remove();
         a[2].remove();
         a[3].remove();
-        // Load css
+        // Load CSS
         a = document.createElement("link");
         a.setAttribute("rel", "stylesheet");
         a.setAttribute("type", "text/css");
         a.setAttribute("href", "https://rawgit.com/knowlet/8Comic-Viewer/dev/css/style.css");
         document.head.appendChild(a);
-        // Create navbar
+        // Create Navbar
         document.body.innerHTML = Form1.innerHTML + "<nav id='nb'><ul><li id='btPrev'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/pv.png' alt='上一卷（話）'/></li><li id='btMenu'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/mu.png' alt='全集列表'/></li><li id='btNext'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/nv.png' alr='下一卷（話）'/></li></ul></nav>";
-        // Drag events
+        // Drag Events
         document.onmousemove = function(a) {
             b && (nb.style.left = a.clientX - 20 + "px", nb.style.top = a.clientY - 50 + "px");
         };
@@ -44,7 +44,7 @@
         document.onmouseup = function() {
             b = false;
         };
-        // Btn events
+        // Btn Events
         btPrev.onclick = function() {
             0 >= ch && alert("前面沒有東西喔！");
             pv();
