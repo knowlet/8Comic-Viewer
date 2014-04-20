@@ -13,7 +13,7 @@
         var a = document.getElementById("TheImg").parentNode, b = false;
         document.getElementById("TheImg").remove();
         // Memory vol.
-        localStorage.a > ch && confirm("你上次已經看到第" + localStorage.last + "話（卷）囉！\n是否要前往呢？") && jv(localStorage.a);
+        localStorage.last > ch && confirm("你上次已經看到第" + localStorage.last + "話（卷）囉！\n是否要前往呢？") && jv(localStorage.last);
         localStorage.setItem("last", ch);
         // Load pic
         for (var d = 1; d <= ps; ++d)
