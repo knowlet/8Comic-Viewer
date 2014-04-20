@@ -45,7 +45,7 @@ exec(function() {
                 a = false;
             }
             btPrev.onclick = function onclick(event) {
-                ch <= 1 && alert("前面沒有東西喔！");
+                ch <= 0 && alert("前面沒有東西喔！");
                 pv();
                 return;
             }
@@ -60,6 +60,8 @@ exec(function() {
             }
         }
     document.getElementById("TheImg").remove();
+    localStorage.last > ch && confirm("你上次已經看到第" + localStorage.last + "話（卷）囉！\n是否要前往呢？") && jv(localStorage.last);
+    localStorage.setItem("last", ch);
     for (var i = 1; i <= ps; ++i) {
         content.appendChild(document.createElement("img"));
         content.getElementsByTagName("img")[i - 1].setAttribute("src", 'http://img' + ss(c, 4, 2) + '.8comic.com/' + ss(c, 6, 1) + '/' + ti + '/' + ss(c, 0, 4) + '/' + nn(i) + '_' + ss(c, mm(i) + 10, 3, f) + '.jpg');
