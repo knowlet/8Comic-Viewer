@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            8Comic Viewer
-// @version         1.23
+// @version         1.24
 // @author          knowlet
 // @namespace       http://knowlet3389.blogspot.tw/
 // @description     Auto load 8comic pic.
@@ -13,8 +13,7 @@
         var a = document.getElementById("TheImg").parentNode, b = false;
         document.getElementById("TheImg").remove();
         // Memory Vol.
-        localStorage.last > ch && confirm("你上次已經看到第" + localStorage.last + "話（卷）囉！\n是否要前往呢？") && jv(localStorage.last);
-        localStorage.setItem("last", ch);
+        localStorage.getItem(ti) > ch ? confirm("你上次已經看到第" + localStorage.getItem(ti) + "話（卷）囉！\n是否要前往呢？") ? jv(localStorage.getItem(ti)) : confirm("那這次瀏覽進度是否要儲存呢？") && localStorage.setItem(ti, ch) : localStorage.setItem(ti, ch);
         // Load Pic
         for (var d = 1; d <= ps; ++d)
             a.appendChild(document.createElement("img")), a.getElementsByTagName("img")[d - 1].setAttribute("src", "http://img" + ss(c, 4, 2) + ".8comic.com/" + ss(c, 6, 1) + "/" + ti + "/" + ss(c, 0, 4) + "/" + nn(d) + "_" + ss(c, mm(d) + 10, 3, f) + ".jpg"), a.appendChild(document.createElement("br"));
