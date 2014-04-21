@@ -38,7 +38,7 @@ nav li img {
 	width: 16px;
 }
 #TheTable img {
-	max-width: 955px;
+	max-width: 85%;
 	transition: all .2s ease-in-out;
 	border-radius: 2px;
 	box-shadow: 3px 3px 9px rgba(20%, 20%, 20%, .3);
