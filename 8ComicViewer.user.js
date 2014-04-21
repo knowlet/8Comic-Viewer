@@ -45,7 +45,7 @@
         };
         // Btn Events
         btPrev.onclick = function() {
-            0 >= ch && alert("前面沒有東西喔！");
+            1 >= ch && alert("前面沒有東西喔！");
             pv();
         };
         btMenu.onclick = function() {
@@ -53,7 +53,7 @@
         };
         btNext.onclick = function() {
             nv();
-            ch >= chs && alert("您已看完了！") && btMenu.click();
+            ch >= chs && alert("您已看完了！") && localStorage.removeItem(ti) && btMenu.click();
         };
     } + ")();";
     document.body.appendChild(b);
