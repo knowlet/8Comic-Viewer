@@ -16,9 +16,8 @@ nav {
 	width: 36px;
 }
 nav li {
-	-webkit-box-shadow: rgba(255, 255, 255, 0.498039) 1px 1px 2px 1px;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	box-shadow: rgba(255, 255, 255, .5) 1px 1px 2px 1px;
+	transition: all .3s ease-in-out;
 	border-radius: 8px;
 	display: block;
 	height: 30px;
@@ -37,4 +36,16 @@ nav li img {
 	position: relative;
 	top: 8px;
 	width: 16px;
+}
+
+#TheTable img {
+	max-width: 955px;
+	transition: all .2s ease-in-out;
+	border-radius: 2px;
+	box-shadow: 3px 3px 9px rgba(20%, 20%, 20%, .3)
+	border: rgba(255,255,255,0.1) groove
+}
+
+#TheTable img:hover {
+	max-width: 98% !important;
 }
