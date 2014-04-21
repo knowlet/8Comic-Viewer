@@ -38,13 +38,3 @@ nav li img {
 	top: 8px;
 	width: 16px;
 }
-td div {
-	width: 85%;
-}
-td img {
-	-webkit-transition: all 0.9s ease-in-out;
-	width: 100%;
-}
-td img:hover {
-	width: auto;
-}
