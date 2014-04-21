@@ -42,8 +42,8 @@ nav li img {
 	max-width: 955px;
 	transition: all .2s ease-in-out;
 	border-radius: 2px;
-	box-shadow: 3px 3px 9px rgba(20%, 20%, 20%, .3)
-	border: rgba(255,255,255,0.1) groove
+	box-shadow: 3px 3px 9px rgba(20%, 20%, 20%, .3);
+	border: groove rgba(255,255,255,0.1);
 }
 
 #TheTable img:hover {
