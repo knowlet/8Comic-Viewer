@@ -8,4 +8,5 @@ A userscript for convenient viewing 8comic.
 ### How to install ###
 * ***Chrome*** : Drag and drop 8ComicViewer.user.js onto [chrome://extensions/](chrome://extensions/) to install it.
 * ***Firefox*** : Install [GreaseMonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/), and click the raw of 8ComicViewer.user.js
+* ***Safari*** : Install [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz), and click the raw of 8ComicViewer.user.js
 * ***IE*** : Install [Trixie](http://www.bhelpuri.net/Trixie/), and click the raw of 8ComicViewer.user.js
