@@ -3,7 +3,6 @@
 	background: rgba(255, 177, 27, 0.9);
 }
 nav ul {
-	cursor: move;
 	padding-left: 0;
 }
 nav {
@@ -21,7 +20,6 @@ nav li {
 	height: 30px;
 	margin: 16px 0px 16px 4px;
 	width: 32px;
-	cursor: default;
 }
 nav li:hover {
 	margin: 16px 0;
@@ -35,17 +33,7 @@ nav li img {
 	top: 8px;
 	width: 16px;
 }
-#TheTable img {
-	max-width: 85%;
-	transition: all .2s ease-in-out;
-	border-radius: 2px;
-	box-shadow: 3px 3px 9px rgba(20%, 20%, 20%, .3);
-	border: rgba(255, 255, 255, .1) groove;
-}
-#TheTable img:hover {
-	max-width: 98% !important;
-}
-#btDrag {
+nav span {
 	position: absolute;
 	font-size: 14px;
 	color: white;
@@ -58,4 +46,14 @@ nav li img {
 	margin-left: -12;
 	cursor: move;
 	border: 2px solid #dcdcdc;
+}
+#TheTable img {
+	max-width: 85%;
+	transition: all .2s ease-in-out;
+	border-radius: 2px;
+	box-shadow: 3px 3px 9px rgba(20%, 20%, 20%, .3);
+	border: rgba(255, 255, 255, .1) groove;
+}
+#TheTable img:hover {
+	max-width: 98% !important;
 }
