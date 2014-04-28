@@ -1,6 +1,4 @@
-#btPrev,
-#btMenu,
-#btNext {
+#btPrev, #btMenu, #btNext {
 	bottom: 48px;
 	background: rgba(255, 177, 27, 0.9);
 }
@@ -46,4 +44,18 @@ nav li img {
 }
 #TheTable img:hover {
 	max-width: 98% !important;
+}
+#btDrag {
+	position: absolute;
+	font-size: 14px;
+	color: white;
+	opacity: .5;
+	height: 20px;
+	width: 13px;
+	border-radius: 20px;
+	background-color: black;
+	padding-left: 7px;
+	margin-left: -12;
+	cursor: move;
+	border: 2px solid #dcdcdc;
 }
