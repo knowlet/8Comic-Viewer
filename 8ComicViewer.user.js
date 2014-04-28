@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            8Comic Viewer
-// @version         1.25
+// @version         1.26
 // @author          knowlet
 // @namespace       http://knowlet3389.blogspot.tw/
 // @description     Auto load 8comic pic.
@@ -33,15 +33,18 @@
         a.setAttribute("href", "https://rawgit.com/knowlet/8Comic-Viewer/dev/css/style.css");
         document.head.appendChild(a);
         // Create Navbar
+        var navX, navY;
         document.body.innerHTML = Form1.innerHTML + "<nav id='nb'><ul><li id='btPrev'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/pv.png' alt='上一卷（話）'/></li><li id='btMenu'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/mu.png' alt='全集列表'/></li><li id='btNext'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/nv.png' alr='下一卷（話）'/></li></ul></nav>";
+        localStorage.navX && (navX = localStorage.navX, navY = localStorage.navY) && (nb.style.left = navX, nb.style.top = navY);
         // Drag Events
         document.onmousemove = function(a) {
-            b && (nb.style.left = a.clientX - 20 + "px", nb.style.top = a.clientY - 50 + "px");
+            b && (nb.style.left = navX = a.clientX - 20 + "px", nb.style.top = navY = a.clientY - 50 + "px");
         };
         nb.onmousedown = function() {
             b = true;
         };
         document.onmouseup = function() {
+            b && (localStorage.setItem("navX", navX), localStorage.setItem("navY", navY));
             b = false;
         };
         // Btn Events
