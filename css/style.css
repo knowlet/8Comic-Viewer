@@ -55,5 +55,5 @@ nav span {
 	border: rgba(255, 255, 255, .1) groove;
 }
 #TheTable img:hover {
-	max-width: 98% !important;
+	max-width: 125% !important;
 }
