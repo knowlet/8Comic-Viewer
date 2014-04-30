@@ -57,7 +57,7 @@
         };
         btNext.onclick = function() {
             nv();
-            ch >= chs && alert("您已看完了！") && localStorage.removeItem(ti), btMenu.click();
+            ch >= chs && alert("您已看完了！") && localStorage.removeItem(ti);
         };
     } + ")();";
     document.body.appendChild(b);
