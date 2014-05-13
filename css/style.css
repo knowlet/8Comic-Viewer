@@ -1,11 +1,8 @@
-#btPrev,
-#btMenu,
-#btNext {
+#btPrev, #btMenu, #btNext {
 	bottom: 48px;
 	background: rgba(255, 177, 27, 0.9);
 }
 nav ul {
-	cursor: move;
 	padding-left: 0;
 }
 nav {
@@ -23,7 +20,6 @@ nav li {
 	height: 30px;
 	margin: 16px 0px 16px 4px;
 	width: 32px;
-	cursor: default;
 }
 nav li:hover {
 	margin: 16px 0;
@@ -37,6 +33,20 @@ nav li img {
 	top: 8px;
 	width: 16px;
 }
+nav span {
+	position: absolute;
+	font-size: 14px;
+	color: white;
+	opacity: .5;
+	height: 20px;
+	width: 13px;
+	border-radius: 20px;
+	background-color: black;
+	padding-left: 7px;
+	margin-left: -12;
+	cursor: move;
+	border: 2px solid #dcdcdc;
+}
 #TheTable img {
 	max-width: 85%;
 	transition: all .2s ease-in-out;
@@ -45,5 +55,5 @@ nav li img {
 	border: rgba(255, 255, 255, .1) groove;
 }
 #TheTable img:hover {
-	max-width: 98% !important;
+	max-width: 125% !important;
 }
