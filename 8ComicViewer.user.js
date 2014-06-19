@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            8Comic Viewer
-// @version         1.30
+// @version         1.31
 // @author          knowlet
 // @namespace       http://knowlet3389.blogspot.tw/
 // @description     Auto load 8comic pic.
@@ -58,6 +58,10 @@
         btNext.onclick = function() {
             nv();
             ch >= chs && alert("您已看完了！") && localStorage.removeItem(ti);
+        };
+        // Auto load next page
+        window.onscroll = function() {
+            scrollY == document.body.scrollHeight - document.body.clientHeight && btNext.click();
         };
     } + ")();";
     document.body.appendChild(b);
