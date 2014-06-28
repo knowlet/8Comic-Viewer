@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            8Comic Viewer
-// @version         1.31
+// @version         1.32
 // @author          knowlet
 // @namespace       http://knowlet3389.blogspot.tw/
 // @description     Auto load 8comic pic.
@@ -63,6 +63,8 @@
         window.onscroll = function() {
             scrollY == document.body.scrollHeight - document.body.clientHeight && btNext.click();
         };
+        // Recover contextMenu
+        document.oncontextmenu = null;
     } + ")();";
     document.body.appendChild(b);
     document.body.removeChild(b);
