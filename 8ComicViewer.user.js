@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    http://knowlet3389.blogspot.tw/
-// @version      1.35
+// @version      1.36
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @match        http://new.comicvip.com/show/*
 // @include      http://new.comicvip.com/show/*
+// @grant        none
 // ==/UserScript==
 (function() {
     var a = document.getElementById("TheImg").parentNode, b = false;
