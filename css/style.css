@@ -57,3 +57,6 @@ nav span {
 #TheTable img:hover {
 	max-width: 125% !important;
 }
+#TheTable td {
+	max-width: 100px;
+}
