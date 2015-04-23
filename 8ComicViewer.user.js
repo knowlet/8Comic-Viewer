@@ -28,7 +28,7 @@
     a = document.createElement("link");
     a.setAttribute("rel", "stylesheet");
     a.setAttribute("type", "text/css");
-    a.setAttribute("href", "https://rawgit.com/knowlet/8Comic-Viewer/dev/css/style.css");
+    a.setAttribute("href", "https://cdn.rawgit.com/knowlet/8Comic-Viewer/master/css/style.css");
     document.head.appendChild(a);
     // Create Navbar
     var navX, navY;
