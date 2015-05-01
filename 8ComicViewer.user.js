@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    http://knowlet3389.blogspot.tw/
-// @version      1.36
+// @version      1.37
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @match        http://new.comicvip.com/show/*
@@ -58,7 +58,9 @@
     };
     // Auto load next page
     window.onscroll = function() {
-        scrollY == document.body.scrollHeight - document.body.clientHeight && btNext.click();
+        scrollY == document.body.scrollHeight - document.body.clientHeight && setTimeout(function() {
+            btNext.click();
+        }, 800);
     };
     // Recover contextMenu
     document.oncontextmenu = null;
