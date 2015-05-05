@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    http://knowlet3389.blogspot.tw/
-// @version      1.37
+// @version      1.38
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @match        http://new.comicvip.com/show/*
@@ -32,7 +32,7 @@
     document.head.appendChild(a);
     // Create Navbar
     var navX, navY;
-    document.body.innerHTML = Form1.innerHTML + "<nav id='nb'><span id='btDrag'>x</span><ul><li id='btPrev'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/pv.png' alt='上一卷（話）'/></li><li id='btMenu'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/mu.png' alt='全集列表'/></li><li id='btNext'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/nv.png' alr='下一卷（話）'/></li></ul></nav>";
+    document.body.innerHTML = Form1.innerHTML + "<nav id='nb'><span id='btDrag'>x</span><ul><li id='btPrev'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/pv.png' alt='上一卷（話）' /></li><li id='btMenu'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/mu.png' alt='全集列表' /></li><li id='btNext'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/nv.png' alr='下一卷（話）' /></li><li id='Scroll'><img src='https://raw.githubusercontent.com/knowlet/8Comic-Viewer/dev/img/sc.png' alr='自動捲頁' /></li></ul></nav>";
     parseInt(localStorage.navX) < document.body.clientWidth && parseInt(localStorage.navY) < document.body.clientHeight && parseInt(localStorage.navX) > 0 && parseInt(localStorage.navY) > 0 && (navX = localStorage.navX, navY = localStorage.navY) && (nb.style.left = navX, nb.style.top = navY);
     // Drag Events
     document.onmousemove = function(a) {
@@ -64,4 +64,16 @@
     };
     // Recover contextMenu
     document.oncontextmenu = null;
+    // Auto scrolling
+    var speed = 0;
+    var intervalHandle;
+    Scroll.onclick = function() {
+        ++speed;
+        clearInterval(intervalHandle);
+        intervalHandle = setInterval(function() { window.scrollBy(0, speed); }, 1);
+    };
+    Scroll.onmouseout = function() {
+        speed = 0;
+        clearInterval(intervalHandle);
+    };
 })();
