@@ -14,5 +14,5 @@
 ### How to install ###
 * ***Chrome*** : Install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo), and click [here](https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js)
 * ***Firefox*** : Install [GreaseMonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/),  and click [here](https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js)
-* ***Safari*** : Install [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz),  and click [here](https://raw.githubusercontent.com/knowlet/8Comic-Viewer/b8a392d936063dd33ee2da35da8c22dd5446b713/8ComicViewer.user.js)
+* ***Safari*** : Install [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz),  and click [here](https://github.com/knowlet/8Comic-Viewer/raw/safari/8ComicViewer.user.js)
 * ***IE*** : Install [Trixie](http://sourceforge.net/projects/trixiewpf45/),  and click [here](https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js). I didn't test it cause I don't use IE.
