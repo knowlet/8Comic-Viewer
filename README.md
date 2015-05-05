@@ -9,6 +9,7 @@
 2. Auto BookMark
 3. Auto Loading
 4. AD Free
+5. Auto Scrolling
 
 ### How to install ###
 * ***Chrome*** : Install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo), and click [here](https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js)
