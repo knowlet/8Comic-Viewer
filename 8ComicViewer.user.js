@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    http://knowlet3389.blogspot.tw/
-// @version      1.40
+// @version      1.41
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @match        http://www.comicvip.com/show/*
