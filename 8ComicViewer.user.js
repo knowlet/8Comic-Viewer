@@ -4,8 +4,8 @@
 // @version      1.40
 // @description  Auto load 8comic pic.
 // @author       KNowlet
-// @match        http://new.comicvip.com/show/*
-// @include      http://new.comicvip.com/show/*
+// @match        http://www.comicvip.com/show/*
+// @include      http://www.comicvip.com/show/*
 // @grant        none
 // @downloadURL  https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js
 // ==/UserScript==
