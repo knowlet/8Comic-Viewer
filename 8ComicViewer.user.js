@@ -5,7 +5,9 @@
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @match        http://www.comicvip.com/show/*
+// @match        http://v.comicbus.com/online/*
 // @include      http://www.comicvip.com/show/*
+// @include      http://v.comicbus.com/online/*
 // @grant        none
 // @downloadURL  https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js
 // ==/UserScript==
