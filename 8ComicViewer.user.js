@@ -1,13 +1,11 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    http://knowlet3389.blogspot.tw/
-// @version      1.43
+// @version      1.44
 // @description  Auto load 8comic pic.
 // @author       KNowlet
-// @match        http://www.comicvip.com/show/*
-// @include      http://www.comicvip.com/show/*
-// @match        http://v.comicbus.com/online/*
-// @include      http://v.comicbus.com/online/*
+// @include      /^http[s]?\:\/\/www.comicvip.com\/show\/.*$/
+// @include      /^http[s]?\:\/\/v.comicbus.com\/online\/.*$/
 // @grant        none
 // @downloadURL  https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js
 // ==/UserScript==
@@ -35,7 +33,7 @@
     document.head.appendChild(a);
     // Create Navbar
     var navX, navY;
-    document.body.innerHTML = Form1.innerHTML + "<nav id='nb'><span id='btDrag'>x</span><ul><li id='btPrev'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/pv.png' alt='上一卷（話）' /></li><li id='btMenu'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/mu.png' alt='全集列表' /></li><li id='btNext'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/nv.png' alr='下一卷（話）' /></li><li id='Scroll'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/sc.png' alr='自動捲頁' /></li></ul></nav>";
+    document.body.innerHTML = document.getElementById("Form1").innerHTML + "<nav id='nb'><span id='btDrag'>x</span><ul><li id='btPrev'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/pv.png' alt='上一卷（話）' /></li><li id='btMenu'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/mu.png' alt='全集列表' /></li><li id='btNext'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/nv.png' alr='下一卷（話）' /></li><li id='Scroll'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/sc.png' alr='自動捲頁' /></li></ul></nav>";
     parseInt(localStorage.navX) < document.body.clientWidth && parseInt(localStorage.navY) < document.body.clientHeight && parseInt(localStorage.navX) > 0 && parseInt(localStorage.navY) > 0 && (navX = localStorage.navX, navY = localStorage.navY) && (nb.style.left = navX, nb.style.top = navY);
     // Drag Events
     document.onmousemove = function(a) {
