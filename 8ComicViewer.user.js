@@ -6,6 +6,7 @@
 // @author       KNowlet
 // @include      /^http[s]?\:\/\/www.comicvip.com\/show\/.*$/
 // @include      /^http[s]?\:\/\/v.comicbus.com\/online\/.*$/
+// @include      /^http[s]?\:\/\/v.nowcomic.com\/online\/.*$/
 // @grant        none
 // @downloadURL  https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js
 // ==/UserScript==
