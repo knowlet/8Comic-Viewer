@@ -16,7 +16,7 @@
     localStorage.getItem(ti) > ch && confirm("你上次已經看到第" + localStorage.getItem(ti) + "話（卷）囉！\n是否要前往呢？") ? jv(localStorage.getItem(ti)) : localStorage.setItem(ti, ch);
     // Load Pic
     for (var d = 1; d <= ps; ++d)
-        a.appendChild(document.createElement("img")), a.getElementsByTagName("img")[d - 1].setAttribute("src", "http://img" + ss(c, 4, 2) + ".8comic.com/" + ss(c, 6, 1) + "/" + ti + "/" + ss(c, 0, 4) + "/" + nn(d) + "_" + ss(c, mm(d) + 10, 3, f) + ".jpg"), a.appendChild(document.createElement("br"));
+        a.appendChild(document.createElement("img")), a.getElementsByTagName("img")[d - 1].setAttribute("src", 'http://img' + su(wunvu, 0, 1) + '.8comic.com/' + su(wunvu, 1, 1) + '/' + ti + '/' + ljghx + '/' + nn(d) + '_' + su(jduqd, mm(d), 3) + '.jpg'), a.appendChild(document.createElement("br"));
     // Clean Table
     a = document.getElementsByTagName("table");
     a[0].remove();
