@@ -12,6 +12,8 @@
 // ==/UserScript==
 (function() {
     var a = document.getElementById("TheImg").parentNode, b = false;
+    // resize table
+    a.parentNode.parentNode.parentNode.width = "100%";
     document.getElementById("TheImg").remove();
     // Memory Vol.
     localStorage.getItem(ti) > ch && confirm("你上次已經看到第" + localStorage.getItem(ti) + "話（卷）囉！\n是否要前往呢？") ? jv(localStorage.getItem(ti)) : localStorage.setItem(ti, ch);
