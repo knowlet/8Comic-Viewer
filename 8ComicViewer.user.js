@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    http://knowlet3389.blogspot.tw/
-// @version      1.51
+// @version      1.52
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @include      /^http[s]?\:\/\/www.comicvip.com\/show\/.*$/
@@ -25,14 +25,6 @@
         for (var p = 1; p <= ps; ++p)
             a.appendChild(document.createElement("img")), a.getElementsByTagName("img")[p-1].setAttribute("src", eval(z[0])), a.appendChild(document.createElement("br"));
     }
-    // Clean Table
-    a = document.getElementsByTagName("table");
-    a[0].remove();
-    a[0].remove();
-    a[0].remove();
-    a[1].remove();
-    a[2].remove();
-    a[3].remove();
     // Load CSS
     a = document.createElement("link");
     a.setAttribute("rel", "stylesheet");
