@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    http://knowlet3389.blogspot.tw/
-// @version      1.52
+// @version      1.53
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @include      /^http[s]?\:\/\/www.comicvip.com\/show\/.*$/
@@ -19,14 +19,26 @@
     localStorage.getItem(ti) > ch && confirm("你上次已經看到第" + localStorage.getItem(ti) + "話（卷）囉！\n是否要前往呢？") ? jv(localStorage.getItem(ti)) : localStorage.setItem(ti, ch);
     // Load Pic
     var z = document.body.innerHTML.match(/\'http:\/\/img.*\'\.jpg\'/);
+    var images = document.createDocumentFragment();
+
     if (z === null) {
-        for (var d = 1; d <= ps; ++d)
-            a.appendChild(document.createElement("img")), a.getElementsByTagName("img")[d - 1].setAttribute("src", "http://img" + ss(c, 4, 2) + ".8comic.com/" + ss(c, 6, 1) + "/" + ti + "/" + ss(c, 0, 4) + "/" + nn(d) + "_" + ss(c, mm(d) + 10, 3, f) + ".jpg"), a.appendChild(document.createElement("br"));
+        for (var d = 1; d <= ps; ++d) {
+            var image = document.createElement("img");
+            image.setAttribute("src", "http://img" + ss(c, 4, 2) + ".8comic.com/" + ss(c, 6, 1) + "/" + ti + "/" + ss(c, 0, 4) + "/" + nn(d) + "_" + ss(c, mm(d) + 10, 3, f) + ".jpg");
+            images.appendChild(image);
+            images.appendChild(document.createElement("br"));
+        }
     }
     else {
-        for (var p = 1; p <= ps; ++p)
-            a.appendChild(document.createElement("img")), a.getElementsByTagName("img")[p-1].setAttribute("src", eval(z[0])), a.appendChild(document.createElement("br"));
+        for (var p = 1; p <= ps; ++p) {
+            var image = document.createElement("img");
+            image.setAttribute("src", eval(z[0]));
+            images.appendChild(image);
+            images.appendChild(document.createElement("br"));
+        }
     }
+
+    a.appendChild(images);
     // Load CSS
     a = document.createElement("link");
     a.setAttribute("rel", "stylesheet");
