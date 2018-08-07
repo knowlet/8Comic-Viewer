@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         8Comic Viewer
-// @namespace    https://knowlet3389.blogspot.com/
+// @namespace    https://knowlet3389.blogspot.tw/
 // @version      1.60
 // @description  Auto load 8comic pic.
 // @author       KNowlet
@@ -24,7 +24,7 @@
     if (z === null) {
         for (var d = 1; d <= ps; ++d) {
             var image = document.createElement("img");
-            image.setAttribute('src', '//img' + su(tmkqp, 0, 1) + '.8comic.com/' + su(tmkqp, 1, 1) + '/' + ti + '/' + vnnlw + '/' + nn(d) + '_' + su(cewds, mm(d), 3) + '.jpg');
+            image.setAttribute("src", "//img" + su(tmkqp, 0, 1) + ".8comic.com/" + su(tmkqp, 1, 1) + "/" + ti + "/" + vnnlw + "/" + nn(d) + "_" + su(cewds, mm(d), 3) + ".jpg");
             images.appendChild(image);
             images.appendChild(document.createElement("br"));
         }
@@ -65,7 +65,7 @@
         1 >= ch ? alert("前面沒有東西喔！") : (localStorage.setItem(ti,pi), pv());
     };
     btMenu.onclick = function() {
-        location.assign("//www.8comic.com/html/" + ti.toString() + ".html");
+        location.assign("http://www.8comic.com/html/" + ti.toString() + ".html");
     };
     btNext.onclick = function() {
         nv();
