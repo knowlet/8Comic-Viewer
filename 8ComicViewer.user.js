@@ -67,7 +67,7 @@
         1 >= ch ? alert("前面沒有東西喔！") : (localStorage.setItem(ti,pi), pv());
     };
     btMenu.onclick = function() {
-        location.assign("//www.8comic.com/html/" + ti.toString() + ".html");
+        location.assign("http://www.8comic.com/html/" + ti.toString() + ".html");
     };
     btNext.onclick = function() {
         nv();
