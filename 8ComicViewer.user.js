@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         8Comic Viewer
-// @namespace    http://knowlet3389.blogspot.tw/
-// @version      1.53
+// @namespace    https://knowlet3389.blogspot.com/
+// @version      1.60
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @include      /^http[s]?\:\/\/www.comicvip.com\/show\/.*$/
@@ -18,13 +18,13 @@
     // Memory Vol.
     localStorage.getItem(ti) > ch && confirm("你上次已經看到第" + localStorage.getItem(ti) + "話（卷）囉！\n是否要前往呢？") ? jv(localStorage.getItem(ti)) : localStorage.setItem(ti, ch);
     // Load Pic
-    var z = document.body.innerHTML.match(/\'http:\/\/img.*\'\.jpg\'/);
+    var z = document.body.innerHTML.match(/\'\/\/img.*\'\.jpg\'/);
     var images = document.createDocumentFragment();
 
     if (z === null) {
         for (var d = 1; d <= ps; ++d) {
             var image = document.createElement("img");
-            image.setAttribute("src", "http://img" + ss(c, 4, 2) + ".8comic.com/" + ss(c, 6, 1) + "/" + ti + "/" + ss(c, 0, 4) + "/" + nn(d) + "_" + ss(c, mm(d) + 10, 3, f) + ".jpg");
+            image.setAttribute('src', '//img' + su(tmkqp, 0, 1) + '.8comic.com/' + su(tmkqp, 1, 1) + '/' + ti + '/' + vnnlw + '/' + nn(d) + '_' + su(cewds, mm(d), 3) + '.jpg');
             images.appendChild(image);
             images.appendChild(document.createElement("br"));
         }
@@ -43,11 +43,11 @@
     a = document.createElement("link");
     a.setAttribute("rel", "stylesheet");
     a.setAttribute("type", "text/css");
-    a.setAttribute("href", "http://knowlet.github.io/8Comic-Viewer/files/css/style.css");
+    a.setAttribute("href", "https://8comic.knowlet.me/files/css/style.css");
     document.head.appendChild(a);
     // Create Navbar
     var navX, navY;
-    document.body.innerHTML = document.getElementById("Form1").innerHTML + "<nav id='nb'><span id='btDrag'>x</span><ul><li id='btPrev'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/pv.png' alt='上一卷（話）' /></li><li id='btMenu'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/mu.png' alt='全集列表' /></li><li id='btNext'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/nv.png' alr='下一卷（話）' /></li><li id='Scroll'><img src='http://knowlet.github.io/8Comic-Viewer/files/img/sc.png' alr='自動捲頁' /></li></ul></nav>";
+    document.body.innerHTML = document.getElementById("Form1").innerHTML + "<nav id='nb'><span id='btDrag'>x</span><ul><li id='btPrev'><img src='//8comic.knowlet.me/files/img/pv.png' alt='上一卷（話）' /></li><li id='btMenu'><img src='//8comic.knowlet.me/files/img/mu.png' alt='全集列表' /></li><li id='btNext'><img src='//8comic.knowlet.me/files/img/nv.png' alr='下一卷（話）' /></li><li id='Scroll'><img src='//8comic.knowlet.me/files/img/sc.png' alr='自動捲頁' /></li></ul></nav>";
     parseInt(localStorage.navX) < document.body.clientWidth && parseInt(localStorage.navY) < document.body.clientHeight && parseInt(localStorage.navX) > 0 && parseInt(localStorage.navY) > 0 && (navX = localStorage.navX, navY = localStorage.navY) && (nb.style.left = navX, nb.style.top = navY);
     // Drag Events
     document.onmousemove = function(a) {
@@ -65,7 +65,7 @@
         1 >= ch ? alert("前面沒有東西喔！") : (localStorage.setItem(ti,pi), pv());
     };
     btMenu.onclick = function() {
-        location.assign("http://www.8comic.com/html/" + ti.toString() + ".html");
+        location.assign("//www.8comic.com/html/" + ti.toString() + ".html");
     };
     btNext.onclick = function() {
         nv();
