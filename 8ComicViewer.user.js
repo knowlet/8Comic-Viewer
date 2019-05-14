@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    https://knowlet3389.blogspot.tw/
-// @version      1.62
+// @version      1.63
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @include      /^http[s]?\:\/\/www.comicvip.com\/show\/.*$/
@@ -9,6 +9,7 @@
 // @include      /^http[s]?\:\/\/v.nowcomic.com\/online\/.*$/
 // @include      /^http[s]?\:\/\/www.comicgood.com\/online\/.*$/
 // @include      /^http[s]?\:\/\/www.comicbus.cc\/online\/.*$/
+// @include      /^http[s]?\:\/\/www.comicbus.me\/online\/.*$/
 // @grant        none
 // @downloadURL  https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js
 // ==/UserScript==
