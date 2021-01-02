@@ -18,6 +18,10 @@
     localStorage.getItem(ti) > ch && confirm("你上次已經看到第" + localStorage.getItem(ti) + "話（卷）囉！\n是否要前往呢？") ? jv(localStorage.getItem(ti)) : localStorage.setItem(ti, ch);
     // Load Pic
     var z = document.body.innerHTML.match(/\'\/\/img.*\'\.jpg\'/);
+    if(z == null){
+        z = document.body.innerHTML.match(/\.src\=unescape\(.*?\);/);
+        z[0] = z[0].replace(".src=","");
+    }
     var images = document.createDocumentFragment();
 
     if (z === null) {
