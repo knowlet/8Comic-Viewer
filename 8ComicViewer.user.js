@@ -4,7 +4,7 @@
 // @version      1.70
 // @description  Auto load 8comic pic.
 // @author       KNowlet
-// @include      /^http[s]?\:\/\/.*\/online\/(best_|comic-|manga_|a-|b-)\d+\.html(\?ch=\d+.*)?$/
+// @include      /^http[s]?\:\/\/.*\/online\/(new-|best_|comic-|manga_|a-|b-)\d+\.html(\?ch=\d+.*)?$/
 // @grant        none
 // @downloadURL  https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js
 // ==/UserScript==
