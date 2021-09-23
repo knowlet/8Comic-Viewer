@@ -50,7 +50,7 @@
     document.head.appendChild(a);
     // Create Navbar
     var navX, navY;
-    document.body.innerHTML = document.getElementById("Form1").innerHTML + "<nav id='nb'><span id='btDrag'>x</span><ul><li id='btPrev'><img src='//8comic.knowlet.me/files/img/pv.png' alt='上一卷（話）' /></li><li id='btMenu'><img src='//8comic.knowlet.me/files/img/mu.png' alt='全集列表' /></li><li id='btNext'><img src='//8comic.knowlet.me/files/img/nv.png' alr='下一卷（話）' /></li><li id='Scroll'><img src='//8comic.knowlet.me/files/img/sc.png' alr='自動捲頁' /></li></ul></nav>";
+    document.body.innerHTML = document.getElementById("Formimg").innerHTML + "<nav id='nb'><span id='btDrag'>x</span><ul><li id='btPrev'><img src='//8comic.knowlet.me/files/img/pv.png' alt='上一卷（話）' /></li><li id='btMenu'><img src='//8comic.knowlet.me/files/img/mu.png' alt='全集列表' /></li><li id='btNext'><img src='//8comic.knowlet.me/files/img/nv.png' alr='下一卷（話）' /></li><li id='Scroll'><img src='//8comic.knowlet.me/files/img/sc.png' alr='自動捲頁' /></li></ul></nav>";
     parseInt(localStorage.navX) < document.body.clientWidth && parseInt(localStorage.navY) < document.body.clientHeight && parseInt(localStorage.navX) > 0 && parseInt(localStorage.navY) > 0 && (navX = localStorage.navX, navY = localStorage.navY) && (nb.style.left = navX, nb.style.top = navY);
     // Drag Events
     document.onmousemove = function(a) {
