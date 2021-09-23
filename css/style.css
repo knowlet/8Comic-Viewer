@@ -42,13 +42,14 @@
 	color: white;
 	opacity: .5;
 	height: 20px;
-	width: 13px;
+	width: 20px;
 	border-radius: 20px;
 	background-color: black;
-	padding-left: 7px;
+	padding-left: 5px;
 	margin-left: -12;
 	cursor: move;
 	border: 2px solid #dcdcdc;
+	line-height: initial;
 }
 #TheTable img {
 	max-width: 85%;
