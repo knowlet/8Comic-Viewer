@@ -5,6 +5,7 @@
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @include      /^http[s]?\:\/\/.*\/online\/(new-|best_|comic-|manga_|a-|b-)\d+\.html(\?ch=\d+.*)?$/
+// @match        https://a.twobili.com/ReadComic/*
 // @grant        none
 // @downloadURL  https://github.com/knowlet/8Comic-Viewer/raw/master/8ComicViewer.user.js
 // ==/UserScript==
@@ -33,7 +34,9 @@
         }
     }
     else {
+        var pp = 0;
         for (var p = 1; p <= ps; ++p) {
+            pp++
             var image = document.createElement("img");
             image.setAttribute("src", eval(z[0]));
             images.appendChild(image);
