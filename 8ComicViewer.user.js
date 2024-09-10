@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         8Comic Viewer
 // @namespace    https://knowlet3389.blogspot.tw/
-// @version      1.71
+// @version      1.72
 // @description  Auto load 8comic pic.
 // @author       KNowlet
 // @include      /^http[s]?\:\/\/.*\/online\/(new-|best_|comic-|manga_|a-|b-)\d+\.html(\?ch=\d+.*)?$/
