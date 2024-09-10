@@ -14,6 +14,7 @@
     var a = document.getElementById("TheImg").parentNode, b = false;
     // resize table
     a.parentNode.parentNode.parentNode.width = "100%";
+    a.style["flex-direction"] = "column";
     document.getElementById("TheImg").remove();
     // Memory Vol.
     localStorage.getItem(ti) > ch && confirm("你上次已經看到第" + localStorage.getItem(ti) + "話（卷）囉！\n是否要前往呢？") ? jv(localStorage.getItem(ti)) : localStorage.setItem(ti, ch);
@@ -30,7 +31,6 @@
             var image = document.createElement("img");
             image.setAttribute("src", "//img" + su(tmkqp, 0, 1) + ".8comic.com/" + su(tmkqp, 1, 1) + "/" + ti + "/" + vnnlw + "/" + nn(d) + "_" + su(cewds, mm(d), 3) + ".jpg");
             images.appendChild(image);
-            images.appendChild(document.createElement("br"));
         }
     }
     else {
@@ -40,7 +40,6 @@
             var image = document.createElement("img");
             image.setAttribute("src", eval(z[0]));
             images.appendChild(image);
-            images.appendChild(document.createElement("br"));
         }
     }
 
